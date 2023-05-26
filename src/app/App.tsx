@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { AboutPageLazy } from "./pages/AboutPage/AboutPageLazy";
-import { MainPageLazy } from "./pages/MainPage/MainPageAsync";
+import { AboutPageLazy } from "../pages/AboutPage/AboutPageLazy";
+import { MainPageLazy } from "../pages/MainPage/MainPageAsync";
 import { Suspense } from "react";
 import "./styles/index.scss";
-import { useTheme } from "./theme/useTheme";
-import { classNames } from "./helpers/classNames/classNames";
+import { useTheme } from "./providers/ThemeProvider/lib/useTheme";
+import { classNames } from "../helpers/classNames/classNames";
 
 const router = createBrowserRouter([
   {
