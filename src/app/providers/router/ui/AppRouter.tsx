@@ -2,7 +2,6 @@ import { FC, Suspense } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { MainPage } from "../../../../pages/MainPage";
 import { AboutPage } from "../../../../pages/AboutPage";
-import { NavBar } from "../../../../widgets/NavBar";
 
 const createSuspenseWithFallback = (fallback: any) => (Component: FC) =>
   (

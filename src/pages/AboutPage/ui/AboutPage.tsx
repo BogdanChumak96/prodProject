@@ -1,7 +1,9 @@
-import Layout from "../../../components/Layout/ui/Layout";
+import { useTranslation } from "react-i18next";
+import { Layout } from "../../../components/Layout";
 
 const AboutPage = () => {
-  return <Layout>AboutPage</Layout>;
+  const { t } = useTranslation("about");
+  return <Layout>{t("Про нас")}</Layout>;
 };
 
 export default AboutPage;
