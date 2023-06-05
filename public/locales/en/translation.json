@@ -1,5 +1,8 @@
 {
   "Текстовый пример": "Text example",
   "Перевод": "Translation",
-  "Язык": "English"
+  "Язык": "English",
+  "Страница не найдена": "Note Found Page",
+  "Произошла непредвидимая ошибка": "Has some problems",
+  "Обновить страницу": "Reload Page"
 }

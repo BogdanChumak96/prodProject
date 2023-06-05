@@ -1,7 +1,9 @@
-import { FC, Suspense } from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { MainPage } from "../../../../pages/MainPage";
-import { AboutPage } from "../../../../pages/AboutPage";
+import { FC, Suspense } from 'react';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { MainPage } from '../../../../pages/MainPage';
+import { AboutPage } from '../../../../pages/AboutPage';
+import { NoteFoundPage } from '../../../../pages/NotFoundPage';
+import { PageLoader } from '../../../../widgets/PageLoader';
 
 const createSuspenseWithFallback = (fallback: any) => (Component: FC) =>
   (
@@ -12,12 +14,16 @@ const createSuspenseWithFallback = (fallback: any) => (Component: FC) =>
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: createSuspenseWithFallback(<div>Loading...</div>)(MainPage),
+    path: '/',
+    element: createSuspenseWithFallback(<PageLoader />)(MainPage),
   },
   {
-    path: "/about",
-    element: createSuspenseWithFallback(<div>Loading...</div>)(AboutPage),
+    path: '/about',
+    element: createSuspenseWithFallback(<PageLoader />)(AboutPage),
+  },
+  {
+    path: '*',
+    element: <NoteFoundPage />,
   },
 ]);
 

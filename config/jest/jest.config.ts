@@ -9,6 +9,7 @@ module.exports = {
 
   // Stop running tests after `n` failures
   // bail: 0,
+  setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
 
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "C:\\Users\\bogda\\AppData\\Local\\Temp\\jest",
@@ -80,7 +81,7 @@ module.exports = {
     'ts',
     'tsx',
     'json',
-    'node'
+    'node',
   ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
@@ -149,7 +150,7 @@ module.exports = {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  testMatch: ['<rootDir>src/**/*(*.)@(@spec|test).[tj]s?(x)']
+  testMatch: ['<rootDir>src/**/*(*.)@(@spec|test).[tj]s?(x)'],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [

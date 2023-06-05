@@ -18,6 +18,13 @@
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
+      // "types": ["jest", "testing-library__jest-dom"]
     }
-  }
+  },
+  "include": [
+    "./config/jest/setupTests.ts",
+    "./src/**/*.js",
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ]
 }

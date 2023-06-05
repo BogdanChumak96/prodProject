@@ -21,11 +21,16 @@
   "devDependencies": {
     "@babel/preset-env": "^7.22.4",
     "@babel/preset-typescript": "^7.21.5",
+    "@testing-library/dom": "^9.3.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.2",
     "@types/node": "^20.2.3",
     "@types/react": "^17.0.60",
     "@types/react-dom": "^17.0.11",
+    "@types/testing-library__jest-dom": "^5.14.6",
     "@types/webpack": "^5.28.1",
+    "@types/webpack-bundle-analyzer": "^4.6.0",
     "@types/webpack-dev-server": "^4.7.2",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "babel-plugin-i18next-extract": "^0.9.0",
@@ -65,9 +70,11 @@
     "i18next-http-backend": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-error-boundary": "^4.0.9",
     "react-i18next": "^12.3.1",
     "react-router-dom": "^6.11.2",
-    "style-loader": "^3.3.3"
+    "style-loader": "^3.3.3",
+    "webpack-bundle-analyzer": "^4.9.0"
   },
   "repository": "https://github.com/BogdanChumak96/prodProject.git"
 }
